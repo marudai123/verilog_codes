@@ -51,7 +51,9 @@ module testbench;
         .carry(carry)
     );
 
-    initial begin
+    initial 
+        
+        begin
 
         a = 0; b = 0;
         #25;
