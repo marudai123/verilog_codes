@@ -43,7 +43,7 @@ module CLA_tb;
     wire [3:0] s;
     wire Cout;
     
-    // Connnecting Variables 
+     // Instantiate DUT
     CLA uut (
         .a(a),
         .b(b),
