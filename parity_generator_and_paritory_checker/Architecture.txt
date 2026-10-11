@@ -1,0 +1,23 @@
+                    TRANSMITTER
+                         │
+ data_in ──► Parity Generator
+                         │
+                         ▼
+                 transmitted_data
+                         │
+                         ▼
+                  ┌─────────────┐
+                  │   Channel   │
+                  │             │
+                  │ Error Mask  │
+                  └──────┬──────┘
+                         │
+                         ▼
+                   received_data
+                         │
+                         ▼
+                  Parity Checker
+                         │
+                  ┌──────┴──────┐
+                  ▼             ▼
+               VALID ✅      ERROR ❌
